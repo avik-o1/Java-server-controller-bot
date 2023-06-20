@@ -18,4 +18,4 @@ For Ngrok,
 8. After you have authenticated successfully, start your tcp tunnel session using: ngrok tcp 25565
 9. You can change the data center location using: 'ngrok tcp 25565 -region IN
 10. It will forward your port so that other players can join to your server.
-11. to get the ip, just copy the forwarding link. copy with the port number as well. cut the 'tcp://' part. you will be left with the ip address of your server.
+11. To get the ip address of your server, just copy the forwarding link from the console. copy with the port number as well. cut the 'tcp://' part. you will be left with the ip address of your server.
