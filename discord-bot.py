@@ -85,4 +85,4 @@ async def server_help(ctx):
     await ctx.send("```css\nJava Server Controller\n```\n```\n.server_help : Show this message.\n\n.start : Starts the minecraft server, playable after 25 to 30 seconds.\n\n.status : Shows player numbers & latency or whether the server is offline.\n\n.stop : Stops the server only when no one is playing.\n\n.ip : Shows the IP address of the server. \n\n.players : Show the players currently playing on the server. \n```")    
    
 
-client.run('MTA0NzIyNDYzMDU2MzMwNzYxMA.GBUl9Z.asWdlcA3htLczl2AU43o5mgmVacp8NhKxhlUTQ')
+client.run('your bot's token')
