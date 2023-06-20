@@ -2,7 +2,7 @@
 A python coded discord bot that can control your minecraft java server from your pc. Forwarding minecraft server's port using Ngrok in this serssion.
 Addition: a discord webhook that will collect the Ngrok tcp tunnel's address and post it in the discord chat.
 
-1. Install the requirements using pip -r requirements.txt.
+1. Install the requirements using 'pip -r requirements.txt.'
 2. Instruction are given in the codes, make sure to read them and change as instructed.
 
 For the additional discord webhook, create a webhook and put your webhook's url in line 7.
