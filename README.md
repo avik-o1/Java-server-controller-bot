@@ -7,6 +7,8 @@ Addition: a discord webhook that will collect the Ngrok tcp tunnel's address and
 
 For the additional discord webhook, create a webhook and put your webhook's url in line 7.
 
+Go to https://discord.com/developers/applications, create new application and copy the bot's token.
+
 For Ngrok,
 1. Head to https://ngrok.com/
 2. Create an account.
@@ -19,3 +21,5 @@ For Ngrok,
 9. You can change the data center location using: 'ngrok tcp 25565 -region IN
 10. It will forward your port so that other players can join to your server.
 11. To get the ip address of your server, just copy the forwarding link from the console. copy with the port number as well. cut the 'tcp://' part. you will be left with the ip address of your server.
+
+Feel free to add new cool stuff. For queries, hit me up in dms on discord,username: avik.py
