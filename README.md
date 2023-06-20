@@ -16,7 +16,7 @@ For Ngrok,
 4. Download Ngrok from https://ngrok.com/download
 5. Extract it and put it in your directory of choice
 6. Run the ngrok.exe
-7. Authenticate using: 'ngrok config add-authtoken <your authtoken>'
+7. Authenticate using: "ngrok config add-authtoken 'your authtoken'"
 8. After you have authenticated successfully, start your tcp tunnel session using: ngrok tcp 25565
 9. You can change the data center location using: 'ngrok tcp 25565 -region IN
 10. It will forward your port so that other players can join to your server.
