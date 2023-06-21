@@ -2,6 +2,8 @@
 import time
 import discord
 import os
+import json
+import requests
 
 from mcstatus import JavaServer
 
@@ -77,7 +79,10 @@ async def stop(ctx):
 async def ip(ctx):
     print("Server IP requested.")
     await ctx.send("Getting server IP. It starts after the 'tcp://' part.")
-    os.system("the additional webhook's location")
+    tunnel_url = requests.get("http://localhost:4040/api/tunnels").text
+    j = json.loads(tunnel_url)
+    tunnel_url = j['tunnels'][0]['public_url']
+    await ctx.send(content=tunnel_url)
     
 @client.command()
 async def server_help(ctx):
