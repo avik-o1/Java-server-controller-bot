@@ -11,6 +11,10 @@ from discord.ext import commands
 
 server = JavaServer.lookup("your server's ip address or if you are hosting from own pc then '127.0.0.1:25565'")
 
+tunnel_url = requests.get("http://localhost:4040/api/tunnels").text
+j = json.loads(tunnel_url)
+tunnel_url = j['tunnels'][0]['public_url']
+
 try:
     status = server.status()
     print("The server has {0} players and replied in {1} ms".format(status.players.online, status.latency))
@@ -38,8 +42,8 @@ async def start(ctx):
         time.sleep(27)
         await ctx.send("```css\nServer started\n```")
         time.sleep(2)
-        await ctx.send("Here is the IP address. It starts after the 'tcp://' part.")
-        os.system("the additional webhook's location")
+        await ctx.send("Here is the IP address.....")
+        await ctx.send(content=tunnel_url[-23:])
        
 @client.command()
 async def status(ctx):
@@ -78,11 +82,8 @@ async def stop(ctx):
 @client.command()
 async def ip(ctx):
     print("Server IP requested.")
-    await ctx.send("Getting server IP. It starts after the 'tcp://' part.")
-    tunnel_url = requests.get("http://localhost:4040/api/tunnels").text
-    j = json.loads(tunnel_url)
-    tunnel_url = j['tunnels'][0]['public_url']
-    await ctx.send(content=tunnel_url)
+    await ctx.send("Getting server IP.....")
+    await ctx.send(content=tunnel_url[-23:])
     
 @client.command()
 async def server_help(ctx):
