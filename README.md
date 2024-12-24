@@ -1,5 +1,5 @@
-# Server Controller Discord Blt
-A discord bot written kn python that can control your minecraft java server from discord. Forwarding minecraft server's port using Ngrok in this serssion.
+# Server Controller Discord Bot
+A discord bot written in python that can control your minecraft java server from discord. Forwarding minecraft server's port using Ngrok in this serssion.
 
 1. Install the requirements using 'pip -r requirements.txt.'
 2. Instruction are given in the codes, make sure to read them and change as instructed.
